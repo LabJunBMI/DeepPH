@@ -1,25 +1,19 @@
 # Code for [DeepPH]
 
 ## File Descriptions
-
 - `data_split.py`  
-  Script for preprocess ing enzyme data into graph format with multimodal features for pH range prediction.
-
+  Script for preprocessing enzyme data into graph format with multimodal features for pH range prediction.
 - `egnn_clean.py`  
   Defines the core EGNN architecture used in our method.
-
 - `egnn_model_split_range.py`  
   The full model pipeline for training on range prediction tasks.
-
 - `train_model_value_split_range.py`  
   Main training script for learning both the pH value and its interval (range).  
   Supports GPU training and logs intermediate metrics.
-
 - `test_model_r2_split_aa_range3.pt`  
   The trained model containing learned weights.
-
-- ‘new_train_value.pkl, new_test_value.pkl and new_test_value_remove_phenv.pkl'
-  They are our training dataset and two test sets.
+- `new_train_value.pkl`, `new_test_value.pkl`, and `new_test_value_remove_phenv.pkl`  
+  The training dataset and two test sets used in our experiments.
 
 ## How to Run
 
